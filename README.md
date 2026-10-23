@@ -17,11 +17,7 @@ Aucun compte GitHub, aucun outil à installer, aucun mot de passe administrateur
 
 ## Installer
 
-Deux façons, au choix.
-
-**1. Le fichier d'installation (le plus simple).** Télécharger [Pince.dmg](https://github.com/LucasHRCHatReply/pince-releases/releases/latest/download/Pince.dmg), l'ouvrir, puis glisser Pince dans Applications. Au premier lancement macOS refuse d'ouvrir l'app (voir l'avertissement plus bas) : clic droit sur Pince › Ouvrir, ou Réglages Système › Confidentialité et sécurité › « Ouvrir quand même ». Au premier lancement, un didacticiel de cinq écrans fait essayer Pince ; il se rouvre depuis Aide › Didacticiel.
-
-**2. Une commande dans Terminal.** Dans Terminal (Cmd + Espace, « Terminal »), une seule commande, qui installe aussi les mises à jour :
+**Une commande dans Terminal (la plus sûre).** Dans Terminal (Cmd + Espace, « Terminal »), une seule commande, qui installe aussi les mises à jour :
 
 ```
 curl -fsSL https://raw.githubusercontent.com/LucasHRCHatReply/pince-releases/main/installer.sh | zsh
@@ -29,7 +25,10 @@ curl -fsSL https://raw.githubusercontent.com/LucasHRCHatReply/pince-releases/mai
 
 Le script télécharge la dernière version, vérifie l'empreinte SHA-256 du zip, l'identifiant de l'app et sa signature
 (équipe Apple `JT9FY7PP7K`, `codesign --verify --deep --strict`), copie `Pince.app` dans `~/Applications`, pose la
-commande `pince` dans `~/.local/bin`, puis ouvre l'app. Il garde l'historique et les réglages.
+commande `pince` dans `~/.local/bin`, puis ouvre l'app. Il garde l'historique et les réglages. Au premier lancement,
+un didacticiel de cinq écrans fait essayer Pince ; il se rouvre depuis Aide › Didacticiel.
+
+**Ou le fichier d'installation.** Télécharger [Pince.dmg](https://github.com/LucasHRCHatReply/pince-releases/releases/latest/download/Pince.dmg), l'ouvrir, puis glisser Pince dans Applications. Au premier lancement macOS refuse d'ouvrir l'app (voir l'avertissement plus bas) : clic droit sur Pince › Ouvrir, ou Réglages Système › Confidentialité et sécurité › « Ouvrir quand même ».
 
 Une autorisation facultative : pour que Retour colle tout seul, Réglages Système › Confidentialité et sécurité ›
 Accessibilité › Pince. Sans elle, Pince copie l'élément et vous collez avec ⌘V.
